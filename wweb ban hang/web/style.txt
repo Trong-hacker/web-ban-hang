@@ -1,0 +1,96 @@
+ /* Navigation Bar */
+ .navbar-inverse {
+    background-color: #000;
+    border: none;
+    margin-bottom: 0; /* Remove default margin */
+    position: fixed; /* Fix the navbar at the top */
+    top: 0; /* Position it at the top of the page */
+    width: 100%; /* Make sure it spans the full width of the viewport */
+    z-index: 1030; /* Ensure it stays above other content */
+    box-shadow: 0 2px 4px rgba(0,0,0,0.3); /* Optional shadow for better separation */
+    height: 40px; /* Adjust the height as needed */
+}
+
+.navbar-inverse .navbar-header {
+    float: left;
+}
+
+.navbar-inverse .navbar-brand {
+    color: #fff;
+    font-size: 20px; /* Adjust font size as needed */
+    line-height: 40px; /* Match the height of the navbar */
+    padding: 0 15px; /* Add some horizontal padding */
+}
+
+.navbar-inverse .navbar-nav {
+    float: left;
+    display: flex;
+    flex: 1; /* Allow it to expand and fill available space */
+    justify-content: space-between; /* Distribute space evenly */
+    margin: 0; /* Remove default margin */
+    padding: 0; /* Remove default padding */
+}
+
+.navbar-inverse .navbar-nav > li {
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-inverse .navbar-nav > li > a {
+    color: #fff;
+    line-height: 40px; /* Match the height of the navbar */
+    padding: 0 15px; /* Add some horizontal padding */
+    display: flex;
+    align-items: center; /* Center items vertically */
+}
+
+.navbar-inverse .navbar-nav > li > a:hover,
+.navbar-inverse .navbar-nav > li > a:focus {
+    color: #ddd;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle {
+    border: none;
+    background-color: transparent;
+}
+
+.navbar-inverse .navbar-toggle .icon-bar {
+    background-color: #fff;
+}
+
+/* Dropdown Menu Styling */
+.navbar-inverse .dropdown-menu {
+    background-color: #333; /* Màu nền của danh sách thả xuống */
+    border: none; /* Xóa bỏ viền */
+    border-radius: 0; /* Loại bỏ góc bo tròn */
+    min-width: 200px; /* Đặt chiều rộng tối thiểu */
+    box-shadow: 0 8px 16px rgba(0,0,0,0.3); /* Tạo hiệu ứng bóng */
+    display: none; /* Ẩn danh sách thả xuống khi chưa được kích hoạt */
+}
+
+.navbar-inverse .dropdown-menu > li > a {
+    color: #fff; /* Màu chữ của các mục trong danh sách */
+    line-height: 40px; /* Để căn chỉnh với chiều cao của menu */
+    padding: 10px 15px; /* Khoảng cách bên trong các mục */
+}
+
+.navbar-inverse .dropdown-menu > li > a:hover,
+.navbar-inverse .dropdown-menu > li > a:focus {
+    background-color: #444; /* Màu nền khi di chuột qua các mục */
+    color: #ddd; /* Màu chữ khi di chuột qua các mục */
+}
+
+.navbar-inverse .dropdown:hover .dropdown-menu {
+    display: block; /* Hiển thị danh sách thả xuống khi di chuột qua */
+}
+
+/* Modal Styling */
+.modal-dialog {
+    width: 90%; /* Điều chỉnh kích thước modal */
+    max-width: 500px; /* Kích thước tối đa của modal */
+}
+
+.modal-body {
+    padding: 20px; /* Điều chỉnh khoảng cách bên trong modal */
+}
